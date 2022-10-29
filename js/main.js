@@ -157,7 +157,7 @@ var SudKivuBoundary = L.geoJson(Sud_Kivu, {
                     'Population Percentage: ' + feature.properties.idp_perc + '%' + '<br>' +
                     'Affected Population: ' + formatNumber(Math.round(feature.properties.pd_is_dans)) + '<br>' + 
                     'Total Population: ' + formatNumber(Math.round(feature.properties.population)) +
-                    "<svg/></div>")[0]
+                    "</div>")[0]
         layer.bindPopup(div);
 
         // if ( feature.properties.name==="Fizi") {
