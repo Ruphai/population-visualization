@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Web visualization of population influx indicator for malaria risks mapping">
+	<meta name="author" content="Rufai Omowunmi Balogun">
+	<link rel="icon" href="./favicon.icon">
+	
+  	<title>Population Influx Indicator</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="css/style.css">	
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="data/burundi.js"></script>
+	<script type="text/javascript" src="data/uganda.js"></script>
+	<script type="text/javascript" src="data/rwanda.js"></script>
+	<script type="text/javascript" src="data/nord_kivu.js"></script>
+	<script type="text/javascript" src="data/sud_kivu.js"></script>
+
+	
+	<!--Marker Cluster Grouping-->
+	<script type="text/javascript" src="markercluster/dist/leaflet.markercluster.js"></script>
+	<script type="text/javascript" src="markercluster/dist/leaflet.markercluster-src.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+	<link rel="stylesheet" href="markercluster/dist/MarkerCluster.css">
+  </head>
+  
+  <body>
+	<header>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>		
+			
+				<a href="#" class="navbar-brand">Population Influx Indicator</a>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about" data-toggle="modal" data-target="#aboutModal">About</a></li>
+						<li><a href="#contact" data-toggle="modal" data-target="#contactModal">Contact</a></li>					
+					</ul><!-- end nav -->
+				</nav><!-- end nav collapse -->		
+			</div>
+		</div>
+	</header>
+	
+	<!-- Main Map -->
+	<div class="container" id="main">
+		<div id="map">
+		</div>	
+	</div> <!-- end main container -->
+
+
+	<!-- ABOUT MODAL -->
+	<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close "aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="aboutModalLabel">About Map</h3>
+				</div>
+				<div class="modal-body">
+					<p>
+						INFORMATION TO BE AVAILABLE SOON!
+					</p>
+
+					<p>
+						MORE INFORMATION TO BE AVAILABLE SOON!
+					</p>
+				</div>
+			</div> 
+		</div>
+	</div> <!-- /.modal -->
+
+	<!-- CONTACT MODAL -->
+	<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span "aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="contactModalLabel">Contact Me</h3>
+				</div>
+				<div class="modal-body">
+					<p>Rufai Omowunmi Balogun</p>
+					<p>Earth Observation Data Scientist</p>
+					<p> <a href="https://github.com/Ruphai">Github</a></p>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /.modal -->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- Leaflet JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+	<!-- Stamen JavaScript for Stamen tiles -->
+	<script type="text/javascript" src="https://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>	
+	<!--ESRI Tiles -->
+	<script src="https://cdn.jsdelivr.net/leaflet.esri/1.0.0-rc.8/builds/basemaps/esri-leaflet-basemaps.js"></script>
+
+	<!-- Local JavaScript files -- data and main JS-->
+	<script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
