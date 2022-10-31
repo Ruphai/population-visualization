@@ -16,7 +16,7 @@ var BaseMaps = {
 };
 
 //set dynamic styling
-var LogBreaks = [0.01, 0, 1, 3, 6, 10, 20, 30, 50, 100]
+var LogBreaks = [0.00001, 0, 1, 3, 6, 10, 20, 30, 50, 100]
 var Colors = ["#fff7ec", "#fee8c8", "#fdd49e", "#fdbb84", "#fc8d59", "#ef6548", "#d7301f", "#b30000", "#7f0000"];
 
 function ShapeColor(d) {
