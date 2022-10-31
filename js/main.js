@@ -246,7 +246,6 @@ legend.onAdd = function() {
     var div = L.DomUtil.create("div", "legend");
     div.innerHTML = 
         '<b>IDP Population Percentage</b><br>' +
-        '<div style=background-color:#fff7ec></div>0.01% - 0%<br>' +
         '<div style=background-color:#fee8c8></div>0% - 1%<br>' +
         '<div style=background-color:#fdd49e></div>1% - 3%<br>' +
         '<div style=background-color:#fdbb84></div>3% - 6%<br>' +
