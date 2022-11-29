@@ -2,4 +2,4 @@
 
 A visualization of the population spatial indicator for estimating overburdened healthcare in the region.
 Hosted web service is available here:
-<a href="https://ruphai.github.io/TO-BE-UPDATED/">Population Spatial Indicator<a/>
+<a href="https://ruphai.github.io/population-visualization/">Population Spatial Indicator<a/>
